@@ -31,7 +31,7 @@
                 <i class="el-icon-menu"></i>
                 <span slot="title">课程管理</span>
             </el-menu-item>
-            <el-menu-item index="/user" disabled>
+            <el-menu-item index="/user">
                 <i class="el-icon-document"></i>
                 <span slot="title">用户管理</span>
             </el-menu-item>
@@ -56,15 +56,15 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'appAside',
-  methods: {
-    handleOpen (key: string, keyPath: string): void {
-      console.log(key, keyPath)
+    name: 'appAside',
+    methods: {
+        handleOpen (key: string, keyPath: string): void {
+            console.log(key, keyPath)
+        },
+        handleClose (key: string, keyPath: string): void {
+            console.log(key, keyPath)
+        },
     },
-    handleClose (key: string, keyPath: string): void {
-      console.log(key, keyPath)
-    },
-  },
 })
 </script>
 

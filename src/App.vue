@@ -22,20 +22,20 @@ import Vue from 'vue'
 // })
 
 interface Foo {
-  a: string
+  a: string;
 }
 export default Vue.extend({
-  data () {
-    return {
-      a: 1,
-      b: 2,
-    }
-  },
-  methods: {
-    test () {
-      this.b.valueOf()
+    data () {
+        return {
+            a: 1,
+            b: 2,
+        }
     },
-  },
+    methods: {
+        test () {
+            this.b.valueOf()
+        },
+    },
 })
 </script>
 

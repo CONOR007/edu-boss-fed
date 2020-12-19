@@ -21,10 +21,10 @@ import Vue from 'vue'
 import AppAside from './components/app-aside.vue'
 import AppHeader from './components/app-header.vue'
 export default Vue.extend({
-  components: {
-    AppAside,
-    AppHeader,
-  },
+    components: {
+        AppAside,
+        AppHeader,
+    },
 })
 </script>
 
