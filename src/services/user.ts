@@ -1,10 +1,15 @@
 // 用户相关请求模块
 import qs from 'qs'
+import axios from 'axios'
 import request from '@/utils/request'
 
 interface User {
     phone: string;
     password: string;
+}
+
+interface RefreshToken {
+    refreshtoken: string;
 }
 
 export const login = (data: User) => {
@@ -23,5 +28,14 @@ export const getUserInfo = () => {
     return request({
         method: 'GET',
         url: '/front/user/getInfo',
+    })
+}
+
+export const getRefreshToken = (data: RefreshToken) => {
+    // 使用axios.create是为了防止 这个请求也报错401 进入死循环
+    return axios.create()({
+        method: 'POST',
+        data: qs.stringify(data),
+        url: '/front/user/refresh_token',
     })
 }
