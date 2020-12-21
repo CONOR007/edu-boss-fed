@@ -50,7 +50,7 @@ request.interceptors.response.use((response) => {
     // 如果后台错误码走的是http错误码,那么错误处理写在这里
     // console.dir(error)
     if (error.response) {
-        // 请求发出去了并收到响应 状态码超出了2xx的范围
+    // 请求发出去了并收到响应 状态码超出了2xx的范围
         const { status } = error.response
         if (status === 400) {
             Message({ type: 'error', message: '请求参数错误' })
@@ -103,11 +103,11 @@ request.interceptors.response.use((response) => {
             Message({ type: 'error', message: '服务端错误,请联系管理员' })
         }
     } else if (error.request) {
-        // 请求发出去没有收到响应
+    // 请求发出去没有收到响应
         Message({ type: 'error', message: '请求超时' })
         console.log(error.request)
     } else {
-        // 在设置请求的时候发生了一些事情,触发了错误
+    // 在设置请求的时候发生了一些事情,触发了错误
         Message({ type: 'error', message: '请求失败' + error.message })
     }
     // 抛出异常给调用者
