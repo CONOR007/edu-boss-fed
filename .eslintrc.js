@@ -2,6 +2,8 @@ module.exports = {
     root: true,
     env: {
         node: true,
+        browser: true,
+        es6: true,
     },
     // 使用插件的编码规则
     extends: [
@@ -22,10 +24,7 @@ module.exports = {
                 requireLast: true,
             },
         }],
-        '@typescript-eslint/no-explicit-any': ['error', {
-            fixToUnknown: false,
-            ignoreRestArgs: false,
-        }],
+        '@typescript-eslint/no-explicit-any': 'off',
         // 要求末尾逗号
         'comma-dangle': ['error', 'always-multiline'],
         indent: ['error', 4],

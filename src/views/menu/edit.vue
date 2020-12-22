@@ -1,17 +1,17 @@
 <template>
-  <div class="resource">
-    <List/>
+  <div class="menuEdit">
+    <create-or-edit :isEdit="true"/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import List from './components/list.vue'
+import CreateOrEdit from './components/createOrEdit.vue'
 
 export default Vue.extend({
-    name: 'ResourceIndex',
+    name: 'menuEdit',
     components: {
-        List,
+        CreateOrEdit,
     },
 })
 </script>

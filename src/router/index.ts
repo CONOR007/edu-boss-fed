@@ -37,7 +37,12 @@ const routes: Array<RouteConfig> = [
             {
                 path: '/create',
                 name: 'menu-create',
-                component: () => import(/* webpackChunkName: 'menu-create' */ '@/views/menu/create.vue'),
+                component: () => import(/* webpackChunkName: 'menu-createOrEdit' */ '@/views/menu/create.vue'),
+            },
+            {
+                path: '/edit:id',
+                name: 'menu-edit',
+                component: () => import(/* webpackChunkName: 'menu-createOrEdit' */ '@/views/menu/edit.vue'),
             },
             {
                 path: '/resource',
@@ -87,7 +92,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
     // to: Route: 即将要进入的目标 路由对象
     // from: Route: 当前导航正要离开的路由
-    console.log(to, from)
+    // console.log(to, from)
     if (to.matched.some(record => record.meta.requiresAuth)) {
         if (Store.state.user) next()
         else {
