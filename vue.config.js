@@ -12,6 +12,7 @@ module.exports = {
         },
     },
     devServer: {
+        // 这个代理只限于本地开发使用
         proxy: {
             '/boss': {
                 target: 'http://eduboss.lagou.com',
