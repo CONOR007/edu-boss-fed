@@ -9,4 +9,4 @@ app.use(express.static(path.join(__dirname, '../dist')))
 app.use('/boss', createProxyMiddleware({ target: 'http://eduboss.lagou.com', changeOrigin: true }))
 app.use('/front', createProxyMiddleware({ target: 'http://edufront.lagou.com', changeOrigin: true }))
 
-app.listen(3000)
+app.listen(3080)

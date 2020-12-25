@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "edu-boss-fed",
+      "script": "nodemon",
+      "args": "app.js"
+    }
+  ]
+}

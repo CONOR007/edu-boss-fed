@@ -12,6 +12,7 @@ module.exports = {
         },
     },
     devServer: {
+        port: 3080,
         // 这个代理只限于本地开发使用
         proxy: {
             '/boss': {
