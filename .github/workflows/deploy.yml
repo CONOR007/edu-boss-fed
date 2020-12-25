@@ -20,8 +20,8 @@ jobs:
         port: ${{ secrets.PORT }}
         debug: true
         script: |
-          cd /tmp
+          cd /root
           git clone https://github.com/CONOR007/edu-boss-fed.git
-          cd /tmp/edu-boss-fed
+          cd /root/edu-boss-fed
           chmod +x ./deploy.sh
           ./deploy.sh
