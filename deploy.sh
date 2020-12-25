@@ -18,5 +18,5 @@ npm install
 
 pm2 start pm2.config.json
 
-# 删除 clone 的代码
+# 删除 clone 的代码 
 rm -rf /tmp/edu-boss-fed
