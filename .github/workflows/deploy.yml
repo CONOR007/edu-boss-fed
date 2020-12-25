@@ -21,6 +21,7 @@ jobs:
         debug: true
         script: |
           cd /root
+          rm -rf edu-boss-fed
           git clone https://github.com/CONOR007/edu-boss-fed.git
           cd /root/edu-boss-fed
           chmod +x ./deploy.sh
