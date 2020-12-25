@@ -4,7 +4,7 @@
 rm -rf !(dist)
 
 # 进入跨域服务文件
-cd test-serve/
+cd dist/test-serve/
 
 # 安装依赖
 yarn
