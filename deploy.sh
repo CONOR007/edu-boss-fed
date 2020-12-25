@@ -12,11 +12,11 @@ rm -rf /root/edu-boss-fed/*
 # 将打包好的文件复制过去
 mv /tmp/edu-boss-fed/dist/* /root/edu-boss-fed
 
-cd /root/edu-boss-fed/dist/test-serve
+cd root/edu-boss-fed/test-serve/
 
 yarn
 
-# pm2 start pm2.config.json
+pm2 start pm2.config.json
 
 # 删除 clone 的代码
-# rm -rf /tmp/edu-boss-fed
+rm -rf /tmp/edu-boss-fed
