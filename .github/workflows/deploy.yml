@@ -24,6 +24,5 @@ jobs:
           rm -rf edu-boss-fed
           git clone https://github.com/CONOR007/edu-boss-fed.git
           cd edu-boss-fed
-          rm -rf !(dist)
           chmod +x ./deploy.sh
           ./deploy.sh
