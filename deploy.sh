@@ -7,16 +7,16 @@ cnpm install
 npm run build
 
 # 删除 ngnix 指向的文件夹下的文件
-# rm -rf /root/edu-boss-fed/*
+rm -rf /root/edu-boss-fed/*
 
 # 将打包好的文件复制过去
-mv /tmp/edu-boss-fed/dist/* /root
+mv /tmp/edu-boss-fed/dist/* /root/edu-boss-fed
 
-cd /root/dist/test-serve
+cd /root/edu-boss-fed/dist/test-serve
 
 npm install
 
-pm2 start pm2.config.json
+# pm2 start pm2.config.json
 
 # 删除 clone 的代码
 rm -rf /tmp/edu-boss-fed
