@@ -10,7 +10,7 @@
 rm -rf /root/edu-boss-fed/*
 
 # 将打包好的文件复制过去
-mv /tmp/edu-boss-fed/dist/* /root/edu-boss-fed
+mv dist/* /root/edu-boss-fed
 
 cd root/edu-boss-fed/test-serve/
 
