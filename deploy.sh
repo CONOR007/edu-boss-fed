@@ -7,12 +7,12 @@ cnpm install
 npm run build
 
 # 删除 ngnix 指向的文件夹下的文件
-rm -rf /root/edu-boss-fed/*
+# rm -rf /root/edu-boss-fed/*
 
 # 将打包好的文件复制过去
-mv /tmp/edu-boss-fed/dist/* /root/edu-boss-fed
+mv /tmp/edu-boss-fed/dist/* /root
 
-cd /root/edu-boss-fed/dist/test-serve
+cd /root/dist/test-serve
 
 npm install
 
