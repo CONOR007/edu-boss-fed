@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 删除除test-serve之外没有用的文件
-rm -rf !(test-serve)
+rm -rf !(dist)
 
 # 进入跨域服务文件
 cd test-serve/
