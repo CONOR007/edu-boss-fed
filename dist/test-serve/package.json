@@ -1,0 +1,9 @@
+{
+  "name": "edu-obss-fed-serve",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}

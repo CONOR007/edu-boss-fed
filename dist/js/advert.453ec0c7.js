@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["advert"],{"46ad":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"advert"},[e._v("广告管理")])},d=[],r=n("2b0e"),s=r["default"].extend({name:"AdvertIndex"}),c=s,l=n("2877"),u=Object(l["a"])(c,a,d,!1,null,"89b1d2ce",null);t["default"]=u.exports}}]);
+//# sourceMappingURL=advert.453ec0c7.js.map
